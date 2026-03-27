@@ -1,0 +1,33 @@
+# --- ComfyUI: upstream app + local venv + weights (reinstall via scripts/setup-windows.ps1) ---
+ComfyUI/
+
+# --- Python / tooling ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+.eggs/
+
+# --- Generated animation / cache (large binary outputs) ---
+animation/renders/**/*
+!animation/renders/.gitkeep
+animation/**/cache/
+animation/renders/**/*.mp4
+animation/renders/**/*.mov
+animation/renders/**/*.mkv
+animation/renders/**/*.webm
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.log
+
+# --- Secrets ---
+.env
+.env.*
+*.pem
