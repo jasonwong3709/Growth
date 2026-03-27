@@ -24,7 +24,7 @@ This repository manages **project documentation**, **directory layout**, and **r
 
 | In Git | Not in Git (by design) |
 |--------|-------------------------|
-| Docs, scripts, small JSON workflows, notes | `ComfyUI/venv/`, downloaded `.safetensors`, video renders |
+| Docs, scripts, workflows, **`animation/renders/`** (your pipeline outputs) | `ComfyUI/venv/`, downloaded `.safetensors` (multi-gigabyte checkpoints) |
 | Project folder structure | Multi-gigabyte checkpoints |
 
 So: **`git pull` updates this project’s files only.** It does **not** install Python, PyTorch, or model weights. Use the setup doc or `setup-windows.ps1` on each new machine.

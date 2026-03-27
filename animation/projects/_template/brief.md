@@ -22,4 +22,4 @@
 
 ## Outputs
 
-- Renders go under `animation/renders/<project-slug>/` (gitignored by default).
+- Renders go under `animation/renders/<project-slug>/` and are **committed** so other machines can `git pull` and continue.

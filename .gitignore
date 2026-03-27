@@ -10,14 +10,10 @@ __pycache__/
 *.egg-info/
 .eggs/
 
-# --- Generated animation / cache (large binary outputs) ---
-animation/renders/**/*
-!animation/renders/.gitkeep
+# --- Animation: temp/cache only (renders/ is tracked for multi-machine sync) ---
 animation/**/cache/
-animation/renders/**/*.mp4
-animation/renders/**/*.mov
-animation/renders/**/*.mkv
-animation/renders/**/*.webm
+animation/**/tmp/
+*.tmp
 
 # --- OS / editor ---
 .DS_Store

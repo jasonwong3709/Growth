@@ -126,7 +126,7 @@ You can also use `<repo-root>\ComfyUI\start_comfyui.bat` if present.
 | Commit to Git | Do **not** commit |
 |-----------------|-------------------|
 | `docs/`, `scripts/`, `README.md`, `.gitignore` | `ComfyUI/venv/`, huge weights |
-| Small **exported** ComfyUI workflows JSON under `animation/workflows/` | Rendered `mp4` / image sequences under `animation/renders/` (ignored by default) |
+| Workflows under `animation/workflows/`, renders under **`animation/renders/`** (tracked for multi-machine work) | `ComfyUI/venv/`, huge `.safetensors`; use Git LFS if individual files exceed GitHub limits (see [GIT_LFS.md](GIT_LFS.md)) |
 | Text briefs, shot lists, **your** original art | Third-party assets you are not allowed to redistribute |
 
 `.gitignore` already excludes common large/binary paths.
