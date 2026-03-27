@@ -152,7 +152,13 @@ Paste for the assistant:
 
 ---
 
-## 10. References
+## 10. Model files (checkpoints, Wan, Z-Image, etc.)
+
+After Python/ComfyUI works, see **[MODELS.md](MODELS.md)** for which files go in which `models\` subfolder and **official download links** (Hugging Face + ComfyUI examples). This avoids guessing on a new machine.
+
+---
+
+## 11. References
 
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 - [PyTorch get started](https://pytorch.org/get-started/locally/)
@@ -160,7 +166,7 @@ Paste for the assistant:
 
 ---
 
-## 11. First-time Git (if this folder was not created by `git clone`)
+## 12. First-time Git (if this folder was not created by `git clone`)
 
 If you built the tree locally and need to connect [jasonwong3709/Growth](https://github.com/jasonwong3709/Growth):
 
@@ -179,6 +185,6 @@ If `origin` already exists, use `git remote set-url origin https://github.com/ja
 
 ---
 
-## 12. New Cursor session
+## 13. New Cursor session
 
 See [CURSOR_HANDOFF.md](CURSOR_HANDOFF.md) for a short block you can paste into a new chat.

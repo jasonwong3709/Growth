@@ -8,7 +8,7 @@ This repository manages **project documentation**, **directory layout**, and **r
 
 | Path | Purpose |
 |------|--------|
-| [docs/](docs/) | Human and Cursor-readable setup guides |
+| [docs/](docs/) | Setup guides and **[MODELS.md](docs/MODELS.md)** (weights list + Hugging Face links) |
 | [scripts/](scripts/) | Windows setup automation (`setup-windows.ps1`) |
 | [animation/](animation/) | Animation projects, story structure, exported workflows |
 | [assets/](assets/) | Reference materials you own or may redistribute (keep licenses in mind) |
