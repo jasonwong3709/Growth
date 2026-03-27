@@ -17,3 +17,9 @@ Copy everything below the line into a **new Cursor chat** on a **new Windows mac
 - Goal: local AI animation workflow; project files live under `animation/` and `assets/`.
 
 ---
+
+## Optional: download models without manual browser
+
+After the environment works, open a **new chat** and paste the block from the **top of [MODELS.md](MODELS.md)** (“用 Cursor Chat 自动下载”). The assistant should read `MODELS.md` and run `hf download` into `ComfyUI\models\...`, skipping files that already exist.
+
+---

@@ -2,6 +2,29 @@
 
 本机 ComfyUI 根目录：**`c:\MyGrowth\ComfyUI`**（若你换过路径，把下表中的 `ComfyUI\models\` 换成你的实际路径）。
 
+---
+
+## 用 Cursor Chat 自动下载（不必手点浏览器）
+
+可以。**下次在新机器上**，装好 Python/ComfyUI/`venv` 并装好 `huggingface_hub[cli]` 后，**新开一条 Cursor 对话**，把下面整段复制进去（按你的路径改第一行）：
+
+```text
+请读取本仓库中的 docs/MODELS.md，按其中表格与 Hugging Face 链接，用终端为我下载「当前缺失」的模型到 ComfyUI 的 models 子目录。
+
+规则：
+1. ComfyUI 根目录：<在此填写，例如 c:\MyGrowth\ComfyUI>
+2. 先激活该目录下的 venv，再使用 hf download；若缺少 hf 命令则 pip install "huggingface_hub[cli]"。
+3. 每个文件下载前检查目标路径是否已存在且大小合理，已存在则跳过。
+4. 若仓库需要许可或登录，提示我完成 hf auth login 或网页接受许可后重试。
+5. 完成后简要列出 diffusion_models、checkpoints、text_encoders、vae、loras 中与本清单相关的文件。
+```
+
+Cursor 里的助手会按 `MODELS.md` 里的仓库名、路径和 CLI 示例去执行下载（需要本机已联网、磁盘空间足够）。
+
+**说明：** 助手只能在你当前工作区里操作；请 **先 `git pull` 本仓库** 或把含 `MODELS.md` 的仓库打开为 Cursor 工作区，这样对话才能读到该文件。
+
+---
+
 约定：
 
 - **只把权重放在 `ComfyUI\models\` 下对应子目录**；不要长期堆在 `Downloads`（避免重复占用空间）。
